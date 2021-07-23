@@ -1,0 +1,28 @@
+
+:set -XOverloadedStrings
+:set -XStandaloneDeriving
+:set -XDeriveAnyClass
+
+:set -XTypeOperators
+:set -XNoStarIsType
+:set -XExplicitForAll
+:set -XScopedTypeVariables
+:set -XTupleSections
+:set -XTypeApplications
+:set -XNoStarIsType
+
+import Data.String
+import Fmt
+import Radar
+import System.Environment (getArgs)
+import TextShow
+import Control.Monad.Writer ( MonadWriter(tell, writer), Writer )
+import qualified Data.Text as T 
+
+:set +t
+
+:set -fprint-explicit-foralls
+
+:set -Wno-type-defaults
+
+:set prompt "\ESC[36;5;208m\STX λ >\ESC[m\STX "

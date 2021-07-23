@@ -1,0 +1,34 @@
+:set -XNoStarIsType
+:set -XLambdaCase
+:set -XKindSignatures 
+:set -XScopedTypeVariables
+:set -XExplicitForAll
+:set -XNamedFieldPuns
+:set -XOverloadedStrings
+:set -XViewPatterns
+:set -XTypeOperators
+:set -XTypeApplications
+:set -XNoStarIsType
+
+
+
+import qualified Data.Foldable as FO
+import Data.Foldable (traverse_)
+import qualified Control.Monad as MO
+import Control.Monad (when) 
+import qualified Control.Monad.ST as MST
+import qualified Control.Monad.Writer as MW
+import qualified Control.Monad.Reader as MR
+import Data.Text (Text)
+import qualified Data.Text as DT
+import qualified Text.Read as TR
+import qualified Data.Text as DT
+import qualified Data.STRef as STR 
+
+:set +t
+
+:set -fprint-explicit-foralls
+
+:set -Wno-type-defaults
+
+:set prompt "\ESC[36;5;208m\STX λ >\ESC[m\STX "

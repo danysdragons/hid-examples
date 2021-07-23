@@ -1,0 +1,31 @@
+
+:set -XOverloadedStrings
+:set -XStandaloneDeriving
+:set -XDeriveAnyClass
+
+:set -XTypeOperators
+:set -XNoStarIsType
+:set -XExplicitForAll
+:set -XScopedTypeVariables
+:set -XTupleSections
+:set -XTypeApplications
+
+:set -XFlexibleInstances
+:set -XUndecidableInstances
+:set -XTypeFamilies
+:set -XFlexibleContexts
+:set -XPolyKinds
+:set -XConstraintKinds
+
+import Data.String
+import Data.Map
+import qualified Data.Text as T 
+
+:set +t
+
+:set -fprint-explicit-foralls
+
+:set -Wno-type-defaults
+
+:set prompt "\ESC[36;5;208m\STX λ >\ESC[m\STX "
+

@@ -1,0 +1,72 @@
+name:                ch05-proj
+version:             0.1.0.0
+github:              "githubuser/ch05-proj"
+license:             BSD3
+author:              "Author name here"
+maintainer:          "example@example.com"
+copyright:           "2021 Author name here"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/githubuser/ch05-proj#readme>
+
+  # default-extensions: 
+  #   ApplicativeDo, BangPatterns, ConstraintKinds, DataKinds, DefaultSignatures, 
+  #   DeriveFoldable, DeriveFunctor, DeriveGeneric, DeriveLift, DeriveTraversable, 
+  #   DerivingStrategies, EmptyCase, ExistentialQuantification , ExplicitForAll, 
+  #   FlexibleContexts, FlexibleInstances, FunctionalDependencies, GADTs, 
+  #   GeneralizedNewtypeDeriving, InstanceSigs, KindSignatures, LambdaCase, 
+  #   MultiParamTypeClasses, MultiWayIf, NamedFieldPuns, NoStarIsType, OverloadedStrings, PatternSynonyms, 
+  #   PolyKinds, RankNTypes, ScopedTypeVariables, StandaloneDeriving, TemplateHaskell, 
+  #   TupleSections, TypeFamilies, TypeFamilyDependencies, TypeApplications, TypeOperators
+
+dependencies:
+- base >= 4.7 && < 5
+- mtl >= 2.2.2
+- random >= 1.2.0
+- directory >= 1.3.6.0
+- exceptions >= 0.10.4
+- text >= 1.2.4.1
+
+library:
+  source-dirs: src
+  default-extensions: 
+    NoStarIsType, LambdaCase, KindSignatures, ScopedTypeVariables, ExplicitForAll,
+    NamedFieldPuns, OverloadedStrings, ViewPatterns, TypeOperators, TypeApplications
+
+executables:
+  ch05-proj-exe:
+    main:                Main.hs
+    source-dirs:         app
+    default-extensions: 
+      NoStarIsType, LambdaCase, KindSignatures, ScopedTypeVariables, ExplicitForAll,
+      NamedFieldPuns, OverloadedStrings, ViewPatterns, TypeOperators, TypeApplications
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - ch05-proj
+
+tests:
+  ch05-proj-test:
+    main:                Spec.hs
+    source-dirs:         test
+    default-extensions: 
+      NoStarIsType, LambdaCase, KindSignatures, ScopedTypeVariables, ExplicitForAll,
+      NamedFieldPuns, OverloadedStrings, ViewPatterns, TypeOperators, TypeApplications
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - ch05-proj
