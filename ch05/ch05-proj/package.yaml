@@ -41,7 +41,8 @@ library:
   source-dirs: src
   default-extensions: 
     NoStarIsType, LambdaCase, KindSignatures, ScopedTypeVariables, ExplicitForAll,
-    NamedFieldPuns, OverloadedStrings, ViewPatterns, TypeOperators, TypeApplications
+    NamedFieldPuns, OverloadedStrings, ViewPatterns, TypeOperators, TypeApplications, 
+    FunctionalDependencies
 
 executables:
   ch05-proj-exe:
@@ -49,7 +50,8 @@ executables:
     source-dirs:         app
     default-extensions: 
       NoStarIsType, LambdaCase, KindSignatures, ScopedTypeVariables, ExplicitForAll,
-      NamedFieldPuns, OverloadedStrings, ViewPatterns, TypeOperators, TypeApplications
+      NamedFieldPuns, OverloadedStrings, ViewPatterns, TypeOperators, TypeApplications,
+      FunctionalDependencies
     ghc-options:
     - -threaded
     - -rtsopts
@@ -63,7 +65,8 @@ tests:
     source-dirs:         test
     default-extensions: 
       NoStarIsType, LambdaCase, KindSignatures, ScopedTypeVariables, ExplicitForAll,
-      NamedFieldPuns, OverloadedStrings, ViewPatterns, TypeOperators, TypeApplications
+      NamedFieldPuns, OverloadedStrings, ViewPatterns, TypeOperators, TypeApplications,
+      FunctionalDependencies
     ghc-options:
     - -threaded
     - -rtsopts

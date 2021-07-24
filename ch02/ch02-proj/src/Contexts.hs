@@ -182,7 +182,11 @@ t9 num = fmap funky num
   where
     funky = (\(f, s) -> (f, s, 0))
 
+funky2 = (\(f, s) -> (f, s, 0))
+
 testData = t9 t17
+
+--testData2 = fmap (flip funky2) testData
 
 -- a |> b = flip ($)
 

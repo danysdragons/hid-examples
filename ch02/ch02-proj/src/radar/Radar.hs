@@ -70,3 +70,10 @@ testing dirs =
 
 mhTest :: Int -> String
 mhTest = \case 3 -> "three"; 4 -> "four"; _ -> "wut?"
+
+
+
+type IntToString = Int -> String
+
+hello :: intToString
+hello = (show . (*2))

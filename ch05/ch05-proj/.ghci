@@ -24,6 +24,7 @@ import qualified Data.Text as DT
 import qualified Text.Read as TR
 import qualified Data.Text as DT
 import qualified Data.STRef as STR 
+import qualified Data.List as DL 
 
 :set +t
 
