@@ -1,0 +1,86 @@
+name:                expr-proj
+version:             0.1.0.0
+github:              "githubuser/expr-proj"
+license:             BSD3
+author:              "Author name here"
+maintainer:          "example@example.com"
+copyright:           "2021 Author name here"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/githubuser/expr-proj#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- text
+- text-show
+- mtl
+- transformers
+- sort
+
+#mtl-2.2.2
+#transformers-0.5.6.2
+#text-1.2.4.1
+
+library:
+  source-dirs: 
+    - src 
+    - Rpn
+  default-extensions: 
+    ApplicativeDo, BangPatterns, ConstraintKinds, DataKinds, DefaultSignatures, 
+    DeriveFoldable, DeriveFunctor, DeriveGeneric, DeriveLift, DeriveTraversable, 
+    DerivingStrategies, EmptyCase, ExistentialQuantification , ExplicitForAll, 
+    FlexibleContexts, FlexibleInstances, FunctionalDependencies, GADTs, 
+    GeneralizedNewtypeDeriving, InstanceSigs, KindSignatures, LambdaCase, 
+    MultiParamTypeClasses, MultiWayIf, NamedFieldPuns, NoStarIsType, OverloadedStrings, PatternSynonyms, 
+    PolyKinds, RankNTypes, ScopedTypeVariables, StandaloneDeriving, TemplateHaskell, 
+    TupleSections, TypeFamilies, TypeFamilyDependencies, TypeApplications, TypeOperators
+
+executables:
+  expr-proj-exe:
+    main:                Main.hs
+    source-dirs:         app
+    default-extensions: 
+      ApplicativeDo, BangPatterns, ConstraintKinds, DataKinds, DefaultSignatures, 
+      DeriveFoldable, DeriveFunctor, DeriveGeneric, DeriveLift, DeriveTraversable, 
+      DerivingStrategies, EmptyCase, ExistentialQuantification , ExplicitForAll, 
+      FlexibleContexts, FlexibleInstances, FunctionalDependencies, GADTs, 
+      GeneralizedNewtypeDeriving, InstanceSigs, KindSignatures, LambdaCase, 
+      MultiParamTypeClasses, MultiWayIf, NamedFieldPuns, NoStarIsType, OverloadedStrings, PatternSynonyms, 
+      PolyKinds, RankNTypes, ScopedTypeVariables, StandaloneDeriving, TemplateHaskell, 
+      TupleSections, TypeFamilies, TypeFamilyDependencies, TypeApplications, TypeOperators
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - expr-proj
+
+tests:
+  expr-proj-test:
+    main:                Spec.hs
+    source-dirs:         test
+    default-extensions: 
+      ApplicativeDo, BangPatterns, ConstraintKinds, DataKinds, DefaultSignatures, 
+      DeriveFoldable, DeriveFunctor, DeriveGeneric, DeriveLift, DeriveTraversable, 
+      DerivingStrategies, EmptyCase, ExistentialQuantification , ExplicitForAll, 
+      FlexibleContexts, FlexibleInstances, FunctionalDependencies, GADTs, 
+      GeneralizedNewtypeDeriving, InstanceSigs, KindSignatures, LambdaCase, 
+      MultiParamTypeClasses, MultiWayIf, NamedFieldPuns, NoStarIsType, OverloadedStrings, PatternSynonyms, 
+      PolyKinds, RankNTypes, ScopedTypeVariables, StandaloneDeriving, TemplateHaskell, 
+      TupleSections, TypeFamilies, TypeFamilyDependencies, TypeApplications, TypeOperators
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - expr-proj

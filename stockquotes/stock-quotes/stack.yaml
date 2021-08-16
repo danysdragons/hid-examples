@@ -20,7 +20,8 @@
 # resolver:
 #   url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/18/3.yaml
 
-resolver: lts-14.27
+resolver:
+  url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/18/2.yaml
 
 # User packages to be built.
 # Various formats can be used as shown in the example below.
@@ -36,18 +37,18 @@ packages:
 # Dependency packages to be pulled from upstream that are not in the resolver.
 # These entries can reference officially published versions as well as
 # forks / in-progress versions pinned to a git hash. For example:
-#extra-deps:
-# - Chart-diagrams-1.9.3@sha256:1535d5d0d3febca63138cecfde234315212611c21bb7f4358b2dae8c55c59003,1801
-# - blaze-colonnade-1.2.2.1@sha256:e3c606b5695dcc680dbecd42d23008ba18c6d3cf272639d62857d5118dac112d,1394
-# - colonnade-1.2.0.2@sha256:c95c2ecff5cfa28c736d8fa662d28b71129f67457068e3f4467b296a621607ab,2099
-# - optparse-applicative-0.15.1.0@sha256:29ff6146aabf54d46c4c8788e8d1eadaea27c94f6d360c690c5f6c93dac4b07e,4810
-# - SVGFonts-1.7.0.1@sha256:af422f17a3a87f2d7185ba7ea4b1cf693f71c164e99ce7386f1902145db25df0,3909
-# - diagrams-core-1.4.2@sha256:47de45658e8a805b7cb7f535e7b093daf7e861604fa3c70e25bd4ef481bf1571,2997
-# - diagrams-lib-1.4.4@sha256:1129be254377b926ce2e932113e4bd06256de878d163fbcbacacf1be97bdf3b0,8220
-# - diagrams-postscript-1.5@sha256:ab8c03e39054fa0a8343c9469dcfcdf98228c71d734ef63eefaab38a5688d237,2379
-# - diagrams-svg-1.4.3@sha256:7b4eefffba2b25267eea25155dded4309a153a965eebf16923d289bb797ac3a6,3169
-# - profunctors-5.5.2@sha256:0d824ae4b7cdde33ec4c677ded9e373e057c3a8e2c6b0532c183f9413db6e32c,2176
-# - svg-builder-0.1.1@sha256:22de54d326a6b6912e461e1302edb9108b02aac0b6a6368fcdc3c4a224d487fd,1440
+extra-deps:
+- Chart-diagrams-1.9.3@sha256:1535d5d0d3febca63138cecfde234315212611c21bb7f4358b2dae8c55c59003,1801
+- blaze-colonnade-1.2.2.1@sha256:e3c606b5695dcc680dbecd42d23008ba18c6d3cf272639d62857d5118dac112d,1394
+- colonnade-1.2.0.2@sha256:c95c2ecff5cfa28c736d8fa662d28b71129f67457068e3f4467b296a621607ab,2099
+- optparse-applicative-0.15.1.0@sha256:29ff6146aabf54d46c4c8788e8d1eadaea27c94f6d360c690c5f6c93dac4b07e,4810
+- SVGFonts-1.7.0.1@sha256:af422f17a3a87f2d7185ba7ea4b1cf693f71c164e99ce7386f1902145db25df0,3909
+- diagrams-core-1.4.2@sha256:47de45658e8a805b7cb7f535e7b093daf7e861604fa3c70e25bd4ef481bf1571,2997
+- diagrams-lib-1.4.4@sha256:1129be254377b926ce2e932113e4bd06256de878d163fbcbacacf1be97bdf3b0,8220
+- diagrams-postscript-1.5@sha256:ab8c03e39054fa0a8343c9469dcfcdf98228c71d734ef63eefaab38a5688d237,2379
+- diagrams-svg-1.4.3@sha256:7b4eefffba2b25267eea25155dded4309a153a965eebf16923d289bb797ac3a6,3169
+- profunctors-5.5.2@sha256:0d824ae4b7cdde33ec4c677ded9e373e057c3a8e2c6b0532c183f9413db6e32c,2176
+- svg-builder-0.1.1@sha256:22de54d326a6b6912e461e1302edb9108b02aac0b6a6368fcdc3c4a224d487fd,1440
 
 
 # - Chart-diagrams-1.9.3@sha256:1535d5d0d3febca63138cecfde234315212611c21bb7f4358b2dae8c55c59003,1801

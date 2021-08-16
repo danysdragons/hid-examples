@@ -5,9 +5,19 @@ module StatReport where
 
 import Colonnade
 import Data.Foldable (maximumBy, minimumBy)
+import Data.Function
 import Data.Ord (comparing)
 import Data.Time (diffDays)
 import Fmt
+  ( Buildable (..),
+    Builder,
+    fixedF,
+    pretty,
+    (+|),
+    (+||),
+    (|+),
+    (||+),
+  )
 import QuoteData
 
 decimalPlacesFloating :: Int

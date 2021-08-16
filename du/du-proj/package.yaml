@@ -1,0 +1,108 @@
+name:                du-proj
+version:             0.1.0.0
+github:              "githubuser/du-proj"
+license:             BSD3
+author:              "Author name here"
+maintainer:          "example@example.com"
+copyright:           "2021 Author name here"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/githubuser/du-proj#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- mtl
+- filepath
+- directory
+- unix-compat
+- extra
+- optparse-applicative
+- text
+- text-show
+
+library:
+  source-dirs: src
+  default-extensions:  OverloadedStrings, LambdaCase, 
+      DeriveFoldable, DeriveFunctor, DeriveLift, DeriveTraversable,
+      ApplicativeDo, BangPatterns, ConstraintKinds, DataKinds, DefaultSignatures
+      ,EmptyCase, ExistentialQuantification , ExplicitForAll
+      ,FlexibleContexts, FlexibleInstances, FunctionalDependencies, GADTs
+      ,InstanceSigs, KindSignatures, MultiParamTypeClasses, MultiWayIf
+      ,NamedFieldPuns, NoStarIsType, PatternSynonyms
+      ,PolyKinds, RankNTypes, ScopedTypeVariables, StandaloneDeriving, TemplateHaskell
+      ,TupleSections, TypeFamilies, TypeFamilyDependencies
+      ,TypeOperators, TypeApplications
+      ,NamedFieldPuns
+      
+      #TypeFamilies, TypeFamilyDependencies, TypeApplications, TypeOperators
+
+      # OverloadedStrings, RecordWildCards, DeriveGeneric, DeriveAnyClass, 
+      # ApplicativeDo, BangPatterns, ConstraintKinds, DataKinds, DefaultSignatures, 
+      # DeriveFoldable, DeriveFunctor, DeriveLift, DeriveTraversable, 
+      # DerivingStrategies, EmptyCase, ExistentialQuantification , ExplicitForAll, 
+      # FlexibleContexts, FlexibleInstances, FunctionalDependencies, GADTs, 
+      # GeneralizedNewtypeDeriving, InstanceSigs, KindSignatures, LambdaCase, 
+      # MultiParamTypeClasses, MultiWayIf, NamedFieldPuns, NoStarIsType, PatternSynonyms, 
+      # PolyKinds, RankNTypes, ScopedTypeVariables, StandaloneDeriving, TemplateHaskell, 
+      # TupleSections, TypeFamilies, TypeFamilyDependencies, TypeApplications, TypeOperators
+
+      # DerivingStrategies, GeneralizedNewtypeDeriving, DeriveGeneric, DeriveAnyClass
+ 
+executables:
+  du-proj-exe:
+    main:                Main.hs
+    source-dirs:         app
+    default-extensions: OverloadedStrings, LambdaCase, 
+      DeriveFoldable, DeriveFunctor, DeriveLift, DeriveTraversable,
+      ApplicativeDo, BangPatterns, ConstraintKinds, DataKinds, DefaultSignatures
+      ,EmptyCase, ExistentialQuantification , ExplicitForAll
+      ,FlexibleContexts, FlexibleInstances, FunctionalDependencies, GADTs
+      ,InstanceSigs, KindSignatures, MultiParamTypeClasses, MultiWayIf
+      ,NamedFieldPuns, NoStarIsType, PatternSynonyms
+      ,PolyKinds, RankNTypes, ScopedTypeVariables, StandaloneDeriving, TemplateHaskell
+      ,TupleSections, TypeFamilies, TypeFamilyDependencies
+      ,TypeOperators, TypeApplications
+      ,NamedFieldPuns
+      
+      #TypeFamilies, TypeFamilyDependencies, TypeApplications, TypeOperators
+
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - du-proj
+
+tests:
+  du-proj-test:
+    main:                Spec.hs
+    source-dirs:         test
+    default-extensions: OverloadedStrings, LambdaCase, 
+      DeriveFoldable, DeriveFunctor, DeriveLift, DeriveTraversable,
+      ApplicativeDo, BangPatterns, ConstraintKinds, DataKinds, DefaultSignatures
+      ,EmptyCase, ExistentialQuantification , ExplicitForAll
+      ,FlexibleContexts, FlexibleInstances, FunctionalDependencies, GADTs
+      ,InstanceSigs, KindSignatures, MultiParamTypeClasses, MultiWayIf
+      ,NamedFieldPuns, NoStarIsType, PatternSynonyms
+      ,PolyKinds, RankNTypes, ScopedTypeVariables, StandaloneDeriving, TemplateHaskell
+      ,TupleSections, TypeFamilies, TypeFamilyDependencies
+      ,TypeOperators, TypeApplications
+      ,NamedFieldPuns
+      
+      #TypeFamilies, TypeFamilyDependencies, TypeApplications, TypeOperators
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - du-proj

@@ -9,6 +9,7 @@
 :set -XTypeOperators
 :set -XTypeApplications
 :set -XNoStarIsType
+:set -XFunctionalDependencies
 
 
 

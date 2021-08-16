@@ -37,6 +37,30 @@
 :set -XTypeFamilyDependencies
 :set -XTypeOperators
 
+import Colonnade
+import Control.Monad (unless)
+
+import Data.ByteString.Char8 (unpack)
+import Data.ByteString.Lazy (ByteString)
+import Data.Csv (FromField (..), FromNamedRecord)
+import Data.Foldable (maximumBy, minimumBy, toList, traverse_)
+import Data.Ord (comparing)
+import Data.Text (Text, strip)
+import Data.Time (Day, defaultTimeLocale, diffDays, parseTimeM)
+import Fmt ( Buildable (..), Builder, fixedF, pretty, (+|), (+||), (|+), (||+))
+import GHC.Generics (Generic)
+import Graphics.Rendering.Chart.Backend.Diagrams
+import Graphics.Rendering.Chart.Easy hiding (bars, close, label)
+import qualified Options.Applicative as OA
+import qualified Options.Applicative.Extra as OAE 
+-- import QuoteData
+-- import StatReport
+import Text.Blaze.Colonnade
+import Text.Blaze.Html.Renderer.Utf8 (renderHtml)
+import Text.Blaze.Html5 as H
+import Text.Blaze.Html5.Attributes (src)
+import Data.Function
+
 :set +t
 
 :set -fprint-explicit-foralls

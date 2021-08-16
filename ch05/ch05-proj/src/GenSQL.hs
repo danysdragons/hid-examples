@@ -47,6 +47,19 @@ processLine (i, s) = tell [WrongFormat i s] >> pure ""
 genSQL :: Text -> Writer [ErrorMsg] SQL
 genSQL txt = T.concat <$> traverse processLine (zip [1 ..] $ T.lines txt)
 
+-- traverse :: forall (t :: Type -> Type) (f :: Type -> Type) a b.
+-- (Traversable t, Applicative f) =>
+-- (a -> f b) -> t a -> f (t b)
+-- Defined in ‘Data.Traversable’
+
+-- Map each element of a structure to an action, evaluate these actions from left to right, and collect the results. 
+-- For a version that ignores the results see Data.Foldable.traverse_ .
+
+-- Documentation Source
+
+-- _ :: ((Int, Text) -> WriterT [ErrorMsg] Identity SQL)
+-- -> [(Int, Text)] -> WriterT [ErrorMsg] Identity [SQL]
+
 testData :: Text
 testData = "Pen:Bob\nGlass:Mary:10\nPencil:Alice\nBook:Bob\nBottle"
 

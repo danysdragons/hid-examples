@@ -25,11 +25,11 @@ source-repository head
 
 library
   exposed-modules:
-      CountZeros
       DiceGame
       GCD
       GenSQL
       Helpers
+      Helpers2
       IoRef
       Lib
       MaybeMike
@@ -48,7 +48,7 @@ library
     , directory >=1.3.6.0
     , exceptions >=0.10.4
     , mtl >=2.2.2
-    , random >=1.2.0
+    , random
     , text >=1.2.4.1
   default-language: Haskell2010
 
@@ -67,7 +67,7 @@ executable ch05-proj-exe
     , directory >=1.3.6.0
     , exceptions >=0.10.4
     , mtl >=2.2.2
-    , random >=1.2.0
+    , random
     , text >=1.2.4.1
   default-language: Haskell2010
 
@@ -87,6 +87,6 @@ test-suite ch05-proj-test
     , directory >=1.3.6.0
     , exceptions >=0.10.4
     , mtl >=2.2.2
-    , random >=1.2.0
+    , random
     , text >=1.2.4.1
   default-language: Haskell2010

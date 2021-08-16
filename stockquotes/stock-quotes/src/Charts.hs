@@ -3,6 +3,7 @@
 module Charts (plotChart) where
 
 import Data.Foldable (toList)
+import Data.Function
 import Graphics.Rendering.Chart.Backend.Diagrams
 import Graphics.Rendering.Chart.Easy hiding (bars, close, label)
 import QuoteData

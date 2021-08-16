@@ -6,6 +6,7 @@ import Colonnade
 import Control.Monad (unless)
 import Data.ByteString.Lazy (ByteString)
 import Data.Foldable (traverse_)
+import Data.Function
 import Fmt (Buildable, pretty)
 import QuoteData
 import StatReport

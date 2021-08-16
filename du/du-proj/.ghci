@@ -1,0 +1,49 @@
+:set -XApplicativeDo
+:set -XBangPatterns
+:set -XConstraintKinds
+:set -XDataKinds
+:set -XDefaultSignatures
+-- :set -XDeriveAnyClass
+:set -XDeriveFoldable
+:set -XDeriveFunctor
+-- :set -XDeriveGeneric
+:set -XDeriveLift
+:set -XDeriveTraversable
+-- :set -XDerivingStrategies
+:set -XEmptyCase
+:set -XExplicitForAll
+:set -XExistentialQuantification
+:set -XFlexibleContexts
+:set -XFlexibleInstances
+:set -XFunctionalDependencies
+:set -XGADTs
+-- :set -XGeneralizedNewtypeDeriving
+:set -XInstanceSigs
+:set -XKindSignatures
+:set -XLambdaCase
+:set -XMultiParamTypeClasses
+:set -XMultiWayIf
+:set -XNamedFieldPuns
+:set -XNoStarIsType
+:set -XOverloadedStrings
+:set -XPatternSynonyms
+:set -XRankNTypes
+:set -XRecordWildCards
+:set -XScopedTypeVariables
+:set -XStandaloneDeriving
+:set -XTupleSections
+-- :set -XTypeApplications
+:set -XTypeFamilies
+:set -XTypeFamilyDependencies
+:set -XTypeOperators
+
+
+-- # DerivingStrategies, GeneralizedNewtypeDeriving, DeriveGeneric, DeriveAnyClass, TypeApplications
+
+:set +t
+
+:set -fprint-explicit-foralls
+
+:set -Wno-type-defaults
+
+:set prompt "\ESC[36;5;208m\STX λ >\ESC[m\STX "

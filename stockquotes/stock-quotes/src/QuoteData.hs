@@ -5,6 +5,7 @@ module QuoteData where
 
 import Data.ByteString.Char8 (unpack)
 import Data.Csv (FromField (..), FromNamedRecord)
+import Data.Function
 import Data.Time (Day, defaultTimeLocale, parseTimeM)
 import GHC.Generics (Generic)
 
@@ -16,7 +17,7 @@ data QuoteData = QuoteData
     high :: Double,
     low :: Double
   }
-  deriving (Generic, FromNamedRecord)
+  deriving (Generic, FromNamedRecord, Show)
 
 instance FromField Day where
   parseField = parseTimeM True defaultTimeLocale "%Y-%m-%d" . unpack

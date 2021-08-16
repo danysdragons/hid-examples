@@ -1,14 +1,14 @@
-module Weapons
-  ( Weapon,
-    Winner,
-    winner,
-    UniformRange,
-    randomWeapon,
-    gameRound,
-    game,
-    main,
-  )
-where
+module Weapons where
+
+-- ( Weapon,
+--   Winner,
+--   winner,
+--   UniformRange,
+--   randomWeapon,
+--   gameRound,
+--   game,
+--   main,
+-- )
 
 import Control.Monad.State
 import Data.List (group, sort)
